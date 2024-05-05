@@ -1,0 +1,80 @@
+﻿<Window x:Class="МашинкиWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:МашинкиWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470" Width="760">
+    <Grid Opacity="0.8">
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.Background>
+            <ImageBrush ImageSource="/mashina-doroga-fon-4515.jpg"/>
+        </Grid.Background>
+        <GroupBox Header="Ввод исходных данных" Margin="37,10,403,10" Width="NaN" Height="NaN" Foreground="White" BorderBrush="#FF945C17">
+            <Button Content="Button" HorizontalAlignment="Left" Margin="307,0,0,0" VerticalAlignment="Top"/>
+        </GroupBox>
+        <GroupBox Header="Результаты вычислений" Margin="401,10,39,10" Width="NaN" Height="NaN" BorderBrush="#FF945C17">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="131*"/>
+                    <RowDefinition Height="280*"/>
+                </Grid.RowDefinitions>
+                <GroupBox Header="Расчёт каждой машины"  Height="NaN" Margin="0,63,0,58" BorderBrush="#FF945C17" Grid.RowSpan="2">
+                    <Grid>
+                        <TextBox HorizontalAlignment="Left" x:Name="put1" Margin="97,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54"/>
+                        <TextBox HorizontalAlignment="Left" x:Name="rashod1" Margin="97,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54"/>
+                        <TextBox HorizontalAlignment="Left" x:Name="put2" Margin="156,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54"/>
+                        <TextBox HorizontalAlignment="Left" x:Name="rashod2" Margin="156,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54"/>
+                        <CheckBox Content="Стоимость туда и обратно" Foreground="White" x:Name="tydasuda" HorizontalAlignment="Left" Margin="66,150,0,0" VerticalAlignment="Top" Width="198"/>
+                        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="51,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Первая"/></TextBlock>
+                        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="200,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Вторая"/></TextBlock>
+                        <TextBox HorizontalAlignment="Left" x:Name="firstprice" Margin="30,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84"/>
+                        <TextBox HorizontalAlignment="Left" x:Name="secondprice" Margin="180,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="84" TextChanged="СтоимостьТудаОбратно2_TextChanged"/>
+                    </Grid>
+                </GroupBox>
+                <Button Content="Рассчитать" Click="Рассчитать_Click" HorizontalAlignment="Left" Margin="60,223,0,0" VerticalAlignment="Top" Height="27" Width="87" Grid.Row="1"/>
+                <Button Content="Выход" Click="Выход_Click" HorizontalAlignment="Left" Margin="161,223,0,0" VerticalAlignment="Top" Height="27" Width="87" Grid.Row="1"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Общие данные" Foreground="White" Margin="49,34,412,283" Width="NaN" Height="NaN" BorderBrush="#FF945C17">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"><Run Language="ru-ru" Text="Расстояние (км)"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="10,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94"><Run Language="ru-ru" Text="Цена бензина"/></TextBlock>
+                <TextBox HorizontalAlignment="Left" Margin="104,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Name="РасстояниеКм" Margin="104,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+                <TextBox HorizontalAlignment="Left" Name="ЦенаБензина" Margin="104,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Первая машина" Foreground="White" Margin="49,156,412,161" Width="NaN" Height="NaN" BorderBrush="#FF945C17">
+            <Grid>
+                <TextBox HorizontalAlignment="Left" Name="СкоростьКмЧ" Margin="107,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Name="Ускорение" Margin="107,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Name="Расход100Км"  Margin="107,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="92"><Run Language="ru-ru" Text="Ускорение"/></TextBlock>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Вторая машина" Foreground="White" Margin="49,278,412,39" Width="NaN" Height="NaN" BorderBrush="#FF945C17">
+            <Grid>
+                <TextBox HorizontalAlignment="Left" Name="СкоростьКмЧ2" Margin="107,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Name="Ускорение2" Margin="107,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Name="Расход100Км2" Margin="107,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            </Grid>
+        </GroupBox>
+        <TextBlock HorizontalAlignment="Left" Margin="415,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"><Run Text="Время в"/><Run Language="ru-ru" Text=" пучи (ч)"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" x:Name="timeall" Margin="531,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="421,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"><Run Language="ru-ru" Text="Путь (км)"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="421,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"><Run Language="ru-ru" Text="Бензин (л)"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="515,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru"  Text="Первая"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="576,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Вторая"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="65,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"><Run Language="ru-ru" Text="Скорость (км"/><Run Text="/"/><Run Language="ru-ru" Text="ч)"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="65,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"><Run Language="ru-ru" Foreground="White" Text="Расход на 100 км"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="65,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="65,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Foreground="White" Text="Скорость (км"/><Run Foreground="White" Text="/"/><Run Language="ru-ru" Foreground="White" Text="ч)"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="65,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Foreground="White" Text="Ускорение"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="65,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Foreground="White" Text="Расход на 100 км"/></TextBlock>
+
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.AssemblyReference.cache
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.SuggestedBindingRedirects.cache
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\App.g.cs
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF_MarkupCompile.cache
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\bin\Debug\МашинкиWPF.exe.config
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\bin\Debug\МашинкиWPF.exe
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\bin\Debug\МашинкиWPF.pdb
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\MainWindow.g.cs
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF_MarkupCompile.lref
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\MainWindow.baml
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.g.resources
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.Properties.Resources.resources
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.GenerateResource.cache
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.CoreCompileInputs.cache
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.exe
+C:\Users\stud\Documents\Мыхайлив Виктор 225 (основная)\Visual\МашинкиWPF\obj\Debug\МашинкиWPF.pdb
+D:\Основы программирования\МашинкиWPF\bin\Debug\МашинкиWPF.exe.config
+D:\Основы программирования\МашинкиWPF\bin\Debug\МашинкиWPF.exe
+D:\Основы программирования\МашинкиWPF\bin\Debug\МашинкиWPF.pdb
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.AssemblyReference.cache
+D:\Основы программирования\МашинкиWPF\obj\Debug\MainWindow.g.cs
+D:\Основы программирования\МашинкиWPF\obj\Debug\App.g.cs
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF_MarkupCompile.cache
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF_MarkupCompile.lref
+D:\Основы программирования\МашинкиWPF\obj\Debug\MainWindow.baml
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.g.resources
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.Properties.Resources.resources
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.GenerateResource.cache
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.CoreCompileInputs.cache
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.exe
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.pdb
+D:\Основы программирования\МашинкиWPF\obj\Debug\МашинкиWPF.csproj.SuggestedBindingRedirects.cache
